@@ -1,0 +1,263 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+    ],
+    "hash": "4513c81991499eed76ed8c666a470891",
+    "packages": [
+        {
+            "name": "guzzlehttp/guzzle",
+            "version": "4.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/guzzle.git",
+                "reference": "40db53833aaea528347994acd4578d7b9b2211ee"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/40db53833aaea528347994acd4578d7b9b2211ee",
+                "reference": "40db53833aaea528347994acd4578d7b9b2211ee",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/streams": "~1.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "ext-curl": "*",
+                "phpunit/phpunit": "~4.0",
+                "psr/log": "~1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\": "src/"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Guzzle is a PHP HTTP client library and framework for building RESTful web service clients",
+            "homepage": "http://guzzlephp.org/",
+            "keywords": [
+                "client",
+                "curl",
+                "framework",
+                "http",
+                "http client",
+                "rest",
+                "web service"
+            ],
+            "time": "2014-04-16 17:33:22"
+        },
+        {
+            "name": "guzzlehttp/streams",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/streams.git",
+                "reference": "cf0c8c33ca95cc147efba4c714f630ee44767180"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/streams/zipball/cf0c8c33ca95cc147efba4c714f630ee44767180",
+                "reference": "cf0c8c33ca95cc147efba4c714f630ee44767180",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Stream\\": "src/"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Provides a simple abstraction over streams of data (Guzzle 4+)",
+            "homepage": "http://guzzlephp.org/",
+            "keywords": [
+                "Guzzle",
+                "stream"
+            ],
+            "time": "2014-04-03 04:48:24"
+        },
+        {
+            "name": "prewk/xml-string-streamer",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/prewk/xml-string-streamer.git",
+                "reference": "022a19808b2b81cf1506877b5e4c2256bad0cc0f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/prewk/xml-string-streamer/zipball/022a19808b2b81cf1506877b5e4c2256bad0cc0f",
+                "reference": "022a19808b2b81cf1506877b5e4c2256bad0cc0f",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "~4.0",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "prewk/xml-faker": "0.0.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Prewk\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "prewk",
+                    "email": "oskar.thornblad@gmail.com"
+                }
+            ],
+            "description": "Stream large XML files with low memory consumption",
+            "homepage": "https://github.com/prewk/xml-string-streamer",
+            "time": "2014-05-01 17:12:25"
+        }
+    ],
+    "packages-dev": [
+        {
+            "name": "fzaninotto/faker",
+            "version": "v1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fzaninotto/Faker.git",
+                "reference": "1d143fd8caf4d264602450bc01d7484af788706b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/1d143fd8caf4d264602450bc01d7484af788706b",
+                "reference": "1d143fd8caf4d264602450bc01d7484af788706b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Faker": "src/",
+                    "Faker\\PHPUnit": "test/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "François Zaninotto"
+                }
+            ],
+            "description": "Faker is a PHP library that generates fake data for you.",
+            "keywords": [
+                "data",
+                "faker",
+                "fixtures"
+            ],
+            "time": "2013-12-16 21:56:48"
+        },
+        {
+            "name": "prewk/xml-faker",
+            "version": "0.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/prewk/xml-faker.git",
+                "reference": "212b31fd0bafa500f688d632329355d5a4dd6113"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/prewk/xml-faker/zipball/212b31fd0bafa500f688d632329355d5a4dd6113",
+                "reference": "212b31fd0bafa500f688d632329355d5a4dd6113",
+                "shasum": ""
+            },
+            "require": {
+                "fzaninotto/faker": "v1.3.0",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Prewk\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "prewk",
+                    "email": "oskar.thornblad@gmail.com"
+                }
+            ],
+            "description": "Create random XML with the help of fzaniotto/Faker.",
+            "homepage": "https://github.com/prewk/xml-faker",
+            "time": "2014-04-27 16:49:53"
+        }
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "prewk/xml-string-streamer": 20
+    },
+    "platform": {
+        "php": ">=5.4.0"
+    },
+    "platform-dev": [
+
+    ]
+}

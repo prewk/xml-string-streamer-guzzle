@@ -1,0 +1,25 @@
+{
+    "name": "prewk/xml-string-streamer-guzzle",
+    "description": "Stream provider for Guzzle for use with xml-string-streamer",
+    "homepage": "https://github.com/prewk/xml-string-streamer",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "prewk",
+            "email": "oskar.thornblad@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Prewk\\": "src"
+        }
+    },
+    "require": {
+        "php": ">=5.4.0",
+        "prewk/xml-string-streamer": "*@dev",
+        "guzzlehttp/guzzle": "~4.0"
+    },
+    "require-dev": {
+        "prewk/xml-faker": "0.0.2"
+    }
+}
