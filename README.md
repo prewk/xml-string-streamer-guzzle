@@ -26,6 +26,9 @@ Examples
 --------
 
 ````php
+use Prewk\XmlStringStreamer;
+use Prewk\XmlStringStreamer\StreamProvider; 
+
 $url = "http://example.com/really-large-xml-file.xml";
 
 $CHUNK_SIZE = 1024;
