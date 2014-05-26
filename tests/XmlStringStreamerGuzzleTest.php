@@ -13,10 +13,10 @@ class XmlStringStreamerGuzzleTest extends PHPUnit_Framework_TestCase
         $streamProvider = new StreamProvider\Guzzle($url, 1024);
         
         $counter = 0;
-        $streamer = new XmlStringStreamer\Parser($streamProvider, function($xmlNode) use (&$counter) {
+        $streamer = new XmlStringStreamer\Parser($streamProvider);
+        while ($node = $streamer->getNode()) {
             $counter++;
-        });
-        $streamer->parse();
+        }
 
         $memoryUsageAfter = memory_get_usage(true);
 

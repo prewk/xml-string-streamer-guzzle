@@ -16,7 +16,7 @@ composer.json:
 ````json
 {
     "require": {
-        "prewk/xml-string-streamer-guzzle": "*@dev"
+        "prewk/xml-string-streamer-guzzle": "~0.0.2"
     }
 }
 ````
@@ -34,11 +34,11 @@ $url = "http://example.com/really-large-xml-file.xml";
 $CHUNK_SIZE = 1024;
 $streamProvider = new StreamProvider\Guzzle($url, $CHUNK_SIZE);
 
-$streamer = new XmlStringStreamer\Parser($streamProvider, function($xmlNode) {
-	// Will trigger on each node
-});
+$streamer = new XmlStringStreamer\Parser($streamProvider);
 
-$streamer->parse();
+while ($node = $streamer->getNode()) {
+	// ...
+}
 ````
 
 For more info, see the [xml-string-streamer](https://github.com/prewk/xml-string-streamer) repo.

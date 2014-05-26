@@ -26,12 +26,7 @@ class Guzzle implements iStreamProvider
             
             return $buffer;
         } else {
-            return "";
+            return false;
         }
-    }
-
-    public function hasMore()
-    {
-    	return !$this->stream->eof();
     }
 }
