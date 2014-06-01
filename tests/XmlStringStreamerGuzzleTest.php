@@ -1,7 +1,8 @@
 <?php
 
 use Prewk\XmlStringStreamer;
-use Prewk\XmlStringStreamer\StreamProvider; 
+use Prewk\XmlStringStreamer\Stream; 
+use Prewk\XmlStringStreamer\Parser; 
 
 class XmlStringStreamerGuzzleTest extends PHPUnit_Framework_TestCase
 {
@@ -10,10 +11,12 @@ class XmlStringStreamerGuzzleTest extends PHPUnit_Framework_TestCase
         $url = "http://www.oskarthornblad.se/xml-test/500kb.xml";
         $nodes = 1197;
         $memoryUsageBefore = memory_get_usage(true);
-        $streamProvider = new StreamProvider\Guzzle($url, 1024);
+        $streamProvider = new Stream\Guzzle($url, 1024);
         
         $counter = 0;
-        $streamer = new XmlStringStreamer\Parser($streamProvider);
+        $parser = new Parser\StringWalker();
+        $streamer = new XmlStringStreamer($parser, $streamProvider);
+
         while ($node = $streamer->getNode()) {
             $counter++;
         }

@@ -1,6 +1,8 @@
-<?php namespace Prewk\XmlStringStreamer\StreamProvider;
+<?php namespace Prewk\XmlStringStreamer\Stream;
 
-class Guzzle implements iStreamProvider
+use Prewk\XmlStringStreamer\StreamInterface;
+
+class Guzzle implements StreamInterface
 {
     private $stream;
     private $readBytes = 0;

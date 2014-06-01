@@ -16,7 +16,7 @@ composer.json:
 ````json
 {
     "require": {
-        "prewk/xml-string-streamer-guzzle": "~0.0.2"
+        "prewk/xml-string-streamer-guzzle": "~0.0.3"
     }
 }
 ````
@@ -27,14 +27,16 @@ Examples
 
 ````php
 use Prewk\XmlStringStreamer;
-use Prewk\XmlStringStreamer\StreamProvider; 
+use Prewk\XmlStringStreamer\Stream; 
+use Prewk\XmlStringStreamer\Parser; 
 
 $url = "http://example.com/really-large-xml-file.xml";
 
 $CHUNK_SIZE = 1024;
-$streamProvider = new StreamProvider\Guzzle($url, $CHUNK_SIZE);
+$stream = new Stream\Guzzle($url, $CHUNK_SIZE);
+$parser = new Parser\StringWalker();
 
-$streamer = new XmlStringStreamer\Parser($streamProvider);
+$streamer = new XmlStringStreamer($parser, $stream);
 
 while ($node = $streamer->getNode()) {
 	// ...

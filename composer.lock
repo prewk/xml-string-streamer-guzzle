@@ -3,23 +3,24 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "4a54b63c2b47b6e4f26e67a4070d626b",
+    "hash": "a194b7c47a98e0e4f73f7def4a828d95",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
-            "version": "4.0.2",
+            "version": "4.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "40db53833aaea528347994acd4578d7b9b2211ee"
+                "reference": "85a0ba7de064493c928a8bcdc5eef01e0bde9953"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/40db53833aaea528347994acd4578d7b9b2211ee",
-                "reference": "40db53833aaea528347994acd4578d7b9b2211ee",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/85a0ba7de064493c928a8bcdc5eef01e0bde9953",
+                "reference": "85a0ba7de064493c928a8bcdc5eef01e0bde9953",
                 "shasum": ""
             },
             "require": {
+                "ext-json": "*",
                 "guzzlehttp/streams": "~1.0",
                 "php": ">=5.4.0"
             },
@@ -27,6 +28,9 @@
                 "ext-curl": "*",
                 "phpunit/phpunit": "~4.0",
                 "psr/log": "~1.0"
+            },
+            "suggest": {
+                "ext-curl": "Guzzle will use specific adapters if cURL is present"
             },
             "type": "library",
             "extra": {
@@ -64,7 +68,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2014-04-16 17:33:22"
+            "time": "2014-05-28 05:13:19"
         },
         {
             "name": "guzzlehttp/streams",
@@ -121,16 +125,16 @@
         },
         {
             "name": "prewk/xml-string-streamer",
-            "version": "0.3.1",
+            "version": "0.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/prewk/xml-string-streamer.git",
-                "reference": "db81856b97d9e12855514342853618f67fa219f3"
+                "reference": "1a04b342950d34da610d1efbc6cd10a70b99b0da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prewk/xml-string-streamer/zipball/db81856b97d9e12855514342853618f67fa219f3",
-                "reference": "db81856b97d9e12855514342853618f67fa219f3",
+                "url": "https://api.github.com/repos/prewk/xml-string-streamer/zipball/1a04b342950d34da610d1efbc6cd10a70b99b0da",
+                "reference": "1a04b342950d34da610d1efbc6cd10a70b99b0da",
                 "shasum": ""
             },
             "require": {
@@ -157,7 +161,7 @@
             ],
             "description": "Stream large XML files with low memory consumption",
             "homepage": "https://github.com/prewk/xml-string-streamer",
-            "time": "2014-05-24 16:58:15"
+            "time": "2014-06-01 18:46:14"
         }
     ],
     "packages-dev": [
