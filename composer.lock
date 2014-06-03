@@ -1,9 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
     ],
-    "hash": "a194b7c47a98e0e4f73f7def4a828d95",
+    "hash": "c6e6a324074bb36820a072b2d485b2b0",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -125,16 +126,16 @@
         },
         {
             "name": "prewk/xml-string-streamer",
-            "version": "0.4.0",
+            "version": "0.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/prewk/xml-string-streamer.git",
-                "reference": "1a04b342950d34da610d1efbc6cd10a70b99b0da"
+                "reference": "b34b5eb02c44465a8cbf7c51b506013856dc27db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prewk/xml-string-streamer/zipball/1a04b342950d34da610d1efbc6cd10a70b99b0da",
-                "reference": "1a04b342950d34da610d1efbc6cd10a70b99b0da",
+                "url": "https://api.github.com/repos/prewk/xml-string-streamer/zipball/b34b5eb02c44465a8cbf7c51b506013856dc27db",
+                "reference": "b34b5eb02c44465a8cbf7c51b506013856dc27db",
                 "shasum": ""
             },
             "require": {
@@ -161,7 +162,7 @@
             ],
             "description": "Stream large XML files with low memory consumption",
             "homepage": "https://github.com/prewk/xml-string-streamer",
-            "time": "2014-06-01 18:46:14"
+            "time": "2014-06-03 19:10:52"
         }
     ],
     "packages-dev": [
