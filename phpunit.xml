@@ -13,8 +13,11 @@
         >
 
     <testsuites>
-        <testsuite name="XmlStringStreamer's test suite">
-            <directory>./tests/</directory>
+        <testsuite name="XmlStringStreamer Guzzle stream's unit tests">
+            <directory suffix="Test.php">./tests/unit/*</directory>
+        </testsuite>
+        <testsuite name="XmlStringStreamer Guzzle stream's integration tests">
+            <directory suffix="Test.php">./tests/integration/*</directory>
         </testsuite>
     </testsuites>
 

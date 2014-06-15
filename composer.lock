@@ -4,20 +4,20 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c6e6a324074bb36820a072b2d485b2b0",
+    "hash": "99e36e6f14140d659cccb59e86a61283",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
-            "version": "4.1.0",
+            "version": "4.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "85a0ba7de064493c928a8bcdc5eef01e0bde9953"
+                "reference": "577a69ff7d0a24e9576a2885c3a7afbaadd51ec1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/85a0ba7de064493c928a8bcdc5eef01e0bde9953",
-                "reference": "85a0ba7de064493c928a8bcdc5eef01e0bde9953",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/577a69ff7d0a24e9576a2885c3a7afbaadd51ec1",
+                "reference": "577a69ff7d0a24e9576a2885c3a7afbaadd51ec1",
                 "shasum": ""
             },
             "require": {
@@ -36,7 +36,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.0.x-dev"
+                    "dev-master": "4.1.x-dev"
                 }
             },
             "autoload": {
@@ -69,7 +69,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2014-05-28 05:13:19"
+            "time": "2014-06-08 20:00:20"
         },
         {
             "name": "guzzlehttp/streams",
@@ -126,22 +126,23 @@
         },
         {
             "name": "prewk/xml-string-streamer",
-            "version": "0.5.0",
+            "version": "0.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/prewk/xml-string-streamer.git",
-                "reference": "b34b5eb02c44465a8cbf7c51b506013856dc27db"
+                "reference": "69b1c12d17b92fbb24c50e7f298170d33be3ca2e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/prewk/xml-string-streamer/zipball/b34b5eb02c44465a8cbf7c51b506013856dc27db",
-                "reference": "b34b5eb02c44465a8cbf7c51b506013856dc27db",
+                "url": "https://api.github.com/repos/prewk/xml-string-streamer/zipball/69b1c12d17b92fbb24c50e7f298170d33be3ca2e",
+                "reference": "69b1c12d17b92fbb24c50e7f298170d33be3ca2e",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0"
             },
             "require-dev": {
+                "mockery/mockery": "dev-master",
                 "prewk/xml-faker": "0.0.2"
             },
             "type": "library",
@@ -162,102 +163,84 @@
             ],
             "description": "Stream large XML files with low memory consumption",
             "homepage": "https://github.com/prewk/xml-string-streamer",
-            "time": "2014-06-03 19:10:52"
+            "time": "2014-06-15 18:47:26"
         }
     ],
     "packages-dev": [
         {
-            "name": "fzaninotto/faker",
-            "version": "v1.3.0",
+            "name": "mockery/mockery",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/fzaninotto/Faker.git",
-                "reference": "1d143fd8caf4d264602450bc01d7484af788706b"
+                "url": "https://github.com/padraic/mockery.git",
+                "reference": "096a36f21e7ff0768a8a42d524964f3896acd1c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/1d143fd8caf4d264602450bc01d7484af788706b",
-                "reference": "1d143fd8caf4d264602450bc01d7484af788706b",
+                "url": "https://api.github.com/repos/padraic/mockery/zipball/096a36f21e7ff0768a8a42d524964f3896acd1c6",
+                "reference": "096a36f21e7ff0768a8a42d524964f3896acd1c6",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3"
+                "lib-pcre": ">=7.0",
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "hamcrest/hamcrest-php": "~1.1",
+                "phpunit/phpunit": "~4.0",
+                "satooshi/php-coveralls": "~0.7@dev"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.3.0-dev"
+                    "dev-master": "0.9.x-dev"
                 }
             },
             "autoload": {
                 "psr-0": {
-                    "Faker": "src/",
-                    "Faker\\PHPUnit": "test/"
+                    "Mockery": "library/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "MIT"
+                "BSD-3-Clause"
             ],
             "authors": [
                 {
-                    "name": "François Zaninotto"
+                    "name": "Pádraic Brady",
+                    "email": "padraic.brady@gmail.com",
+                    "homepage": "http://blog.astrumfutura.com"
+                },
+                {
+                    "name": "Dave Marshall",
+                    "email": "dave.marshall@atstsolutions.co.uk",
+                    "homepage": "http://davedevelopment.co.uk"
                 }
             ],
-            "description": "Faker is a PHP library that generates fake data for you.",
+            "description": "Mockery is a simple yet flexible PHP mock object framework for use in unit testing with PHPUnit, PHPSpec or any other testing framework. Its core goal is to offer a test double framework with a succint API capable of clearly defining all possible object operations and interactions using a human readable Domain Specific Language (DSL). Designed as a drop in alternative to PHPUnit's phpunit-mock-objects library, Mockery is easy to integrate with PHPUnit and can operate alongside phpunit-mock-objects without the World ending.",
+            "homepage": "http://github.com/padraic/mockery",
             "keywords": [
-                "data",
-                "faker",
-                "fixtures"
+                "BDD",
+                "TDD",
+                "library",
+                "mock",
+                "mock objects",
+                "mockery",
+                "stub",
+                "test",
+                "test double",
+                "testing"
             ],
-            "time": "2013-12-16 21:56:48"
-        },
-        {
-            "name": "prewk/xml-faker",
-            "version": "0.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/prewk/xml-faker.git",
-                "reference": "212b31fd0bafa500f688d632329355d5a4dd6113"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/prewk/xml-faker/zipball/212b31fd0bafa500f688d632329355d5a4dd6113",
-                "reference": "212b31fd0bafa500f688d632329355d5a4dd6113",
-                "shasum": ""
-            },
-            "require": {
-                "fzaninotto/faker": "v1.3.0",
-                "php": ">=5.3.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Prewk\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "prewk",
-                    "email": "oskar.thornblad@gmail.com"
-                }
-            ],
-            "description": "Create random XML with the help of fzaniotto/Faker.",
-            "homepage": "https://github.com/prewk/xml-faker",
-            "time": "2014-04-27 16:49:53"
+            "time": "2014-06-10 19:25:07"
         }
     ],
     "aliases": [
 
     ],
     "minimum-stability": "stable",
-    "stability-flags": [
-
-    ],
+    "stability-flags": {
+        "mockery/mockery": 20
+    },
     "platform": {
         "php": ">=5.4.0"
     },
