@@ -16,7 +16,7 @@ composer.json:
 ````json
 {
     "require": {
-        "prewk/xml-string-streamer-guzzle": "~0.0.4"
+        "prewk/xml-string-streamer-guzzle": "~0.0.5"
     }
 }
 ````
