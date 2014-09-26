@@ -16,7 +16,7 @@ composer.json:
 ````json
 {
     "require": {
-        "prewk/xml-string-streamer-guzzle": "~0.0.5"
+        "prewk/xml-string-streamer-guzzle": "dev-master"
     }
 }
 ````
@@ -27,8 +27,8 @@ Examples
 
 ````php
 use Prewk\XmlStringStreamer;
-use Prewk\XmlStringStreamer\Stream; 
-use Prewk\XmlStringStreamer\Parser; 
+use Prewk\XmlStringStreamer\Stream;
+use Prewk\XmlStringStreamer\Parser;
 
 $url = "http://example.com/really-large-xml-file.xml";
 
