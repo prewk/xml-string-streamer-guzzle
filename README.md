@@ -11,16 +11,7 @@ Streams large XML files with low memory consumption, over HTTP using [Guzzle](ht
 Installing
 ----------
 
-composer.json:
-
-````json
-{
-    "require": {
-        "prewk/xml-string-streamer-guzzle": "dev-master"
-    }
-}
-````
-
+Run `composer require prewk/xml-string-streamer-guzzle` to install this package.
 
 Examples
 --------
