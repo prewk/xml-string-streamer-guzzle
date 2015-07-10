@@ -15,9 +15,9 @@
         }
     },
     "require": {
-        "php": ">=5.4.0",
-        "prewk/xml-string-streamer": "~0.6.0",
-        "guzzlehttp/guzzle": "~4.0"
+        "php": ">=5.5.0",
+        "prewk/xml-string-streamer": "~0.7.0",
+        "guzzlehttp/guzzle": "~6.0"
     },
     "require-dev": {
         "mockery/mockery": "dev-master"

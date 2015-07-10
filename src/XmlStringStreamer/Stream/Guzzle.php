@@ -1,6 +1,7 @@
 <?php namespace Prewk\XmlStringStreamer\Stream;
 
 use Prewk\XmlStringStreamer\StreamInterface;
+use GuzzleHttp\Psr7;
 
 class Guzzle implements StreamInterface
 {
@@ -25,7 +26,7 @@ class Guzzle implements StreamInterface
     public function getChunk()
     {
         if (!isset($this->stream)) {
-            $this->stream = \GuzzleHttp\Stream\create(fopen($this->url, "r"));
+            $this->stream = Psr7\stream_for(fopen($this->url, "r"));
         }
         
         if (!$this->stream->eof()) {

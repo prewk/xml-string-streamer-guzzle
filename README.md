@@ -1,4 +1,4 @@
-xml-string-streamer-guzzle [![Build Status](https://travis-ci.org/prewk/xml-string-streamer-guzzle.svg?branch=master)](https://travis-ci.org/prewk/xml-string-streamer-guzzle)
+xml-string-streamer-guzzle
 ==========================
 
 Use with [xml-string-streamer](https://github.com/prewk/xml-string-streamer)
