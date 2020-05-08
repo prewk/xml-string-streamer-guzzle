@@ -22,10 +22,10 @@
     "require": {
         "php": ">=5.5.0",
         "guzzlehttp/guzzle": "~6.0",
-        "phpunit/phpunit": "^4.8 || ^5.7.21",
         "prewk/xml-string-streamer": "^0.13.0"
     },
     "require-dev": {
-        "mockery/mockery": "dev-master"
+        "mockery/mockery": "dev-master",
+        "phpunit/phpunit": "^4.8 || ^5.7.21"
     }
 }
