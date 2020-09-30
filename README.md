@@ -1,4 +1,4 @@
-xml-string-streamer-guzzle [![Build Status](https://travis-ci.org/prewk/xml-string-streamer-guzzle.svg?branch=master)](https://travis-ci.org/prewk/xml-string-streamer-guzzle)
+xml-string-streamer-guzzle [![Build Status](https://travis-ci.org/prewk/xml-string-streamer-guzzle.svg?branch=master)](https://travis-ci.org/prewk/xml-string-streamer-guzzle) [![StyleCI](https://github.styleci.io/repos/19353197/shield?branch=master)](https://github.styleci.io/repos/19353197?branch=master)
 ==========================
 
 Use with [xml-string-streamer](https://github.com/prewk/xml-string-streamer)
