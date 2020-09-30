@@ -36,7 +36,7 @@ class Guzzle implements StreamInterface
 
     public function getChunk()
     {
-        if (! $this->stream->eof()) {
+        if (!$this->stream->eof()) {
             $buffer = $this->stream->read($this->chunkSize);
             $this->readBytes += strlen($buffer);
 
@@ -58,7 +58,7 @@ class Guzzle implements StreamInterface
     public function rewind()
     {
         if ($this->isSeekable() === false) {
-            throw new Exception("Attempted to rewind an unseekable stream.");
+            throw new Exception('Attempted to rewind an unseekable stream.');
         }
 
         $this->readBytes = 0;
