@@ -1,4 +1,4 @@
-xml-string-streamer-guzzle
+xml-string-streamer-guzzle [![Build Status](https://travis-ci.org/prewk/xml-string-streamer-guzzle.svg?branch=master)](https://travis-ci.org/prewk/xml-string-streamer-guzzle)
 ==========================
 
 Use with [xml-string-streamer](https://github.com/prewk/xml-string-streamer)
@@ -35,3 +35,9 @@ while ($node = $streamer->getNode()) {
 ````
 
 For more info, see the [xml-string-streamer](https://github.com/prewk/xml-string-streamer) repo.
+
+Compatibility
+-------------
+
+* For PHP >= 5.5 with Guzzle 6 compatibility, use version `0.4.0`
+* For PHP >= 7.2 with Guzzle 7 compatibility, use latest (`1.0.0` and onwards)
