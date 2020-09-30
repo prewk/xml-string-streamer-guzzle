@@ -4,10 +4,9 @@ namespace Tests\Integration;
 
 use Exception;
 use GuzzleHttp\Psr7\NoSeekStream;
+use function GuzzleHttp\Psr7\stream_for;
 use PHPUnit\Framework\TestCase;
 use Prewk\XmlStringStreamer\Stream\Guzzle;
-
-use function GuzzleHttp\Psr7\stream_for;
 
 class GuzzleTest extends TestCase
 {
