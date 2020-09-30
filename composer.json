@@ -20,12 +20,15 @@
         }
     },
     "require": {
-        "php": ">=5.5.0",
-        "guzzlehttp/guzzle": "~6.0",
+        "php": ">=7.2.0",
+        "guzzlehttp/guzzle": "~7.0",
         "prewk/xml-string-streamer": "^0.13.0"
     },
     "require-dev": {
-        "mockery/mockery": "dev-master",
-        "phpunit/phpunit": "^4.8 || ^5.7.21"
+        "mockery/mockery": "^1.3",
+        "phpunit/phpunit": "8.*"
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
     }
 }

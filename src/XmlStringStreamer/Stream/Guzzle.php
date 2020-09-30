@@ -1,8 +1,10 @@
-<?php namespace Prewk\XmlStringStreamer\Stream;
+<?php
+
+namespace Prewk\XmlStringStreamer\Stream;
 
 use Exception;
-use Prewk\XmlStringStreamer\StreamInterface;
 use GuzzleHttp\Psr7;
+use Prewk\XmlStringStreamer\StreamInterface;
 
 class Guzzle implements StreamInterface
 {

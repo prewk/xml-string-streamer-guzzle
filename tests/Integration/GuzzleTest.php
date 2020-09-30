@@ -2,9 +2,12 @@
 
 namespace Tests\Integration;
 
+use Exception;
 use GuzzleHttp\Psr7\NoSeekStream;
 use PHPUnit\Framework\TestCase;
 use Prewk\XmlStringStreamer\Stream\Guzzle;
+
+use function GuzzleHttp\Psr7\stream_for;
 
 class GuzzleTest extends TestCase
 {
@@ -17,7 +20,7 @@ class GuzzleTest extends TestCase
     /** @var string */
     private $source;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
 
@@ -41,13 +44,13 @@ class GuzzleTest extends TestCase
     /** @test */
     public function it_throws_an_exception_if_a_stream_is_non_seekable()
     {
-        $this->expectException(\Exception::class);
+        $this->expectException(Exception::class);
         $this->expectExceptionMessage('Attempted to rewind an unseekable stream.');
 
         $stream = new Guzzle($this->source);
 
         $stream->setGuzzleStream(
-            new NoSeekStream(\GuzzleHttp\Psr7\stream_for($this->source))
+            new NoSeekStream(stream_for($this->source))
         );
 
         $stream->rewind();
@@ -67,7 +70,7 @@ class GuzzleTest extends TestCase
         $stream = new Guzzle($this->source);
 
         $stream->setGuzzleStream(
-            new NoSeekStream(\GuzzleHttp\Psr7\stream_for($this->source))
+            new NoSeekStream(stream_for($this->source))
         );
 
         $this->assertFalse($stream->isSeekable());
