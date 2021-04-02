@@ -19,11 +19,11 @@ class Response implements StreamInterface
     /** @var callable|null */
     private $chunkCallback;
 
-    public function __construct( \GuzzleHttp\Psr7\Response $response, $chunkSize = 1024, $chunkCallback = null )
+    public function __construct(\GuzzleHttp\Psr7\Response $response, $chunkSize = 1024, $chunkCallback = null)
     {
         $this->chunkSize = $chunkSize;
         $this->chunkCallback = $chunkCallback;
-        $this->stream = $response->getBody(); #lets get the body stream
+        $this->stream = $response->getBody(); //lets get the body stream
     }
 
     public function setGuzzleStream($stream)
@@ -33,7 +33,7 @@ class Response implements StreamInterface
 
     public function getChunk()
     {
-        if (! $this->stream->eof()) {
+        if (!$this->stream->eof()) {
             $buffer = $this->stream->read($this->chunkSize);
             $this->readBytes += strlen($buffer);
 
@@ -55,7 +55,7 @@ class Response implements StreamInterface
     public function rewind()
     {
         if ($this->isSeekable() === false) {
-            throw new Exception("Attempted to rewind an unseekable stream.");
+            throw new Exception('Attempted to rewind an unseekable stream.');
         }
 
         $this->readBytes = 0;
