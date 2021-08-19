@@ -22,7 +22,7 @@
     "require": {
         "php": ">=7.2.0",
         "guzzlehttp/guzzle": "~7.0",
-        "prewk/xml-string-streamer": "^0.13.0"
+        "prewk/xml-string-streamer": ">=0.13.0"
     },
     "require-dev": {
         "mockery/mockery": "^1.3",
