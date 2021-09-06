@@ -4,7 +4,7 @@ namespace Tests\Integration;
 
 use Exception;
 use GuzzleHttp\Psr7\NoSeekStream;
-use function GuzzleHttp\Psr7\stream_for;
+use GuzzleHttp\Psr7\Utils;
 use PHPUnit\Framework\TestCase;
 use Prewk\XmlStringStreamer\Stream\Guzzle;
 
@@ -49,7 +49,7 @@ class GuzzleTest extends TestCase
         $stream = new Guzzle($this->source);
 
         $stream->setGuzzleStream(
-            new NoSeekStream(stream_for($this->source))
+            new NoSeekStream(Utils::streamFor($this->source))
         );
 
         $stream->rewind();
@@ -69,7 +69,7 @@ class GuzzleTest extends TestCase
         $stream = new Guzzle($this->source);
 
         $stream->setGuzzleStream(
-            new NoSeekStream(stream_for($this->source))
+            new NoSeekStream(Utils::streamFor($this->source))
         );
 
         $this->assertFalse($stream->isSeekable());
