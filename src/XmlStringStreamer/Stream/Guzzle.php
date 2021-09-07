@@ -25,7 +25,7 @@ class Guzzle implements StreamInterface
         $this->chunkSize = $chunkSize;
         $this->chunkCallback = $chunkCallback;
         $this->stream = new Psr7\CachingStream(
-            Psr7\stream_for(fopen($url, 'r'))
+            Psr7\Utils::streamFor(fopen($url, 'r'))
         );
     }
 
